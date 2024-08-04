@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+{% block title %}Safar_FE - Каталог{% endblock %}
+
+{% block content %}
+<section class="sec2">
+    <div class="allCategories">
+        <h1><img style="width: 34px;height: 34px; margin-top: 7px;" src="{% static 'ru/img/catalog.svg' %}">Все катогории товаров</h1>
+        <a style="margin-top: 20px; color: #800000;" href="{% url 'home' %}">На главную<img style="margin-top: 2px;" src="{% static 'ru/img/right arrow.svg' %}" ></a>
+    </div>
+    <div class="twoblocks">
+        <div class="block1">
+            <div id="fixed-block" class="scrollbar">
+                <a href="{% url 'catalog' %}" class="ablockcatalog">Все Товары</a>
+                <a href="{% url 'shopper' %}" class="ablockcatalog">Шопперы</a>
+                <a href="{% url 'bag' %}" class="ablockcatalog show">Сумки</a>
+                <a href="{% url 'organizer' %}" class="ablockcatalog">Огранайзеры</a>
+                <a href="{% url 'backpack' %}" class="ablockcatalog">Рюкзаки</a>
+                <a href="{% url 'umra' %}" class="ablockcatalog">Умра Safari</a>
+                <a href="{% url 'cosmeticBag' %}" class="ablockcatalog">Косметички</a>
+                <a href="{% url 'giftBag' %}" class="ablockcatalog">Подарочные мешочки</a>
+                <a href="{% url 'envelopesForBooks' %}" class="ablockcatalog">Конверты для книг</a>
+            </div>
+        </div>
+        <div id="block2" class="block2">
+            {% for allbag in allbag %}
+            <div class="product_box">
+                <p class="p_product">{{ allbag.price|format_price }} сум</p>
+                <img style="width: 300px; height: 300px; border: none; border-radius: 5px; z-index: 1;"
+                    src="{{ allbag.image.url }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+<svg width="26.000000" height="20.000000" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip31_7">
+			<rect id="ru 1" rx="-0.500000" width="25.000000" height="19.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="ru 1" rx="-0.500000" width="25.000000" height="19.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip31_7)">
+		<mask id="mask31_9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="26.000000" height="20.000000">
+			<path id="Vector" d="M0 0L26 0L26 20L0 20L0 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</mask>
+		<g mask="url(#mask31_9)">
+			<mask id="mask31_13" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="26.000000" height="20.000000">
+				<path id="Vector" d="M23.52 0L2.47 0C1.1 0 0 1.19 0 2.66L0 17.33C0 18.8 1.1 20 2.47 20L23.52 20C24.89 20 26 18.8 26 17.33L26 2.66C26 1.19 24.89 0 23.52 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			</mask>
+			<g mask="url(#mask31_13)">
+				<path id="Vector" d="M23.52 0L2.47 0C1.1 0 0 1.19 0 2.66L0 17.33C0 18.8 1.1 20 2.47 20L23.52 20C24.89 20 26 18.8 26 17.33L26 2.66C26 1.19 24.89 0 23.52 0Z" fill="#0034A9" fill-opacity="1.000000" fill-rule="nonzero"/>
+				<path id="Vector" d="M0 13.33L26 13.33L26 19.99L0 19.99L0 13.33Z" fill="#D7280F" fill-opacity="1.000000" fill-rule="evenodd"/>
+				<path id="Vector" d="M0 0L26 0L26 6.66L0 6.66L0 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+				<path id="Vector" d="M2.47 0.66C1.45 0.66 0.61 1.56 0.61 2.66L0.61 17.33C0.61 18.43 1.45 19.33 2.47 19.33L23.52 19.33C24.54 19.33 25.38 18.43 25.38 17.33L25.38 2.66C25.38 1.56 24.54 0.66 23.52 0.66L2.47 0.66Z" stroke="#000000" stroke-opacity="0.100000" stroke-width="1.000000"/>
+			</g>
+		</g>
+	</g>
+</svg>

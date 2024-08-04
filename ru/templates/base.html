@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'ru/css/main.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="block_nav">
+        {% block nav %}
+        <nav>
+            <a href="{% url 'home' %}" class="Logo">Safar_FE</a>
+            <div class="box_katalog">
+                <a class="openPopup" href="{% url 'catalog' %}">Каталог</a>
+            </div>
+            <form style="height: 40px;" method="get" action="{% url 'search_results' %}">
+                <input type="text" name="search" class="inp" placeholder="Поиск по категориям..." value="{{ request.GET.search }}">
+                <button type="submit" class="search_btn">Искать</button>
+            </form>
+          
+            <div class="box_katalog_laguage">
+                <button id="openPopup2" class="openPopup2">
+                    <img id="openPopupImage" src="{% static 'ru/img/ru.svg' %}">
+                </button>
+                <div id="popup2" class="popup2">
+                    <a href="" class="hover2" style="display: flex;justify-content: center; align-items: center;">
+                        <img style="width: 26px; height: 20px; border-radius: 3px;" src="{% static 'ru/img/uz.svg' %}">
+                    </a>
+                    <a href="" class="hover2" style="display: flex;justify-content: center; align-items: center;">
+                        <img style="width: 26px; height: 20px; border-radius: 3px;"
+                            src="{% static 'ru/img/usa.avif' %}">
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        {% endblock %}
+    </div>
+
+
+
+    <div class="block_content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+
+    <div class="block_footer">
+        {% block footer %}
+        <footer class="footer">
+            <div class="box_logo_ooo">
+                <a href="{% url 'home' %}" class="Logo">Safar_FE</a>
+                <a href="tel:+998977824411" class="voprosi">Есть Вопросы? Звоните: <br>+998 97 782 44 11</a>
+            </div>
+            <div class="box_tg">
+                <a target="_blank" href="https://t.me/safar_fe"><img src="{% static 'ru/img/tg.svg' %}"></a>
+                <a height: 50px; target="_blank"
+                    href="https://www.instagram.com/safar_fe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                        src="{% static 'ru/img/insta.svg' %}"></a>
+            </div>
+            <p class="ooo">© ООО «Safar_FE»</p>
+        </footer>
+        {% endblock %}
+    </div>
+
+    <script src="{% static 'ru/js/main.js' %}"></script>
+    <script src="{% static 'ru/js/fixed-block.js' %}"></script>
+</body>
+
+</html>

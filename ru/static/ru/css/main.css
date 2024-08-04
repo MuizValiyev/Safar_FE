@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Zen+Maru+Gothic:wght@500&display=swap');
+*,
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #F5F5DC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.block_content {
+  width: 1400px;
+  height: 1000%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px 0px 0px;
+
+}
+
+
+nav {
+  width: 1400px;
+  height: 75px;
+  border-radius: 20px;
+  background: #800000;
+  display: flex;
+  padding: 10px 35px;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+.Logo {
+  color: #F5F5DC;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.katalog {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  background: #093b4e;
+  margin-left: 40px;
+  padding: 0px 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 15px;
+  margin-left: -10px;
+}
+
+.txt_katalog {
+  color: rgb(255, 255, 255);
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.inp::placeholder {
+  color: #800000;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 1;
+}
+
+.inp {
+  background-color: #F5F5DC;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0px 20px;
+  outline: none;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.search_btn {
+  border-radius: 0px 5px 5px 0px;
+  height: 40px;
+  width: 70px;
+  padding: 0px;
+  background-color: #F5F5DC;
+  margin-left: -5px;
+  color: #800000;
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+.korzina_krug {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 180px;
+}
+
+
+.vxod {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.yazik {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px 7px;
+}
+
+.box_yaziki {
+  width: 50px;
+  height: 90px;
+  margin-top: 12px;
+  margin-left: -12px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  gap: 8px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.yazik:hover .box_yaziki {
+  display: flex;
+}
+
+.sec2 {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sec2 h1 {
+  font-size: 30px;
+  color: #800000;
+  font-weight: 1000;
+}
+
+.prod {
+  width: 1400px;
+  color: #800000;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_catalog_txt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.vse {
+  height: 25px;
+  color: #768580;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.box_sec2_prod {
+  width: 1400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 30px 0px;
+  gap: 66.5px;
+  margin: 0 auto;
+}
+
+
+.box_proda {
+  width: 300px;
+  height: 300px;
+  background-image: url(./img/Бокс\ каталога\ .png);
+  justify-content: center;
+  display: flex;
+  align-items: end;
+  padding: 20px;
+}
+
+.name_prod {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background: #768580;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.box_sec2 {
+  display: flex;
+  width: 1400px;
+  flex-direction: column;
+}
+
+.box_sec2 p {
+  width: 1400px;
+  color: #800000;
+}
+
+.box_sec2_leader {
+  width: 1400px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 30px 0px;
+}
+
+.footer {
+  width: 1400px;
+  height: 151px;
+  background: #800000;
+  padding: 20px 90px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.box_logo_ooo {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  height: 45px;
+}
+
+.prod_footer,
+.lider_footer {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 22px;
+}
+
+.voprosi,
+.ooo {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.voprosi {
+  height: 50px;
+}
+
+.box_tg {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 40px;
+}
+
+
+
+.popup a {
+  color: #800000;
+  text-decoration: none;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.openPopup {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #F5F5DC;
+  color: #800000;
+  cursor: pointer;
+}
+
+
+.openPopup2 {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #F5F5DC;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  cursor: pointer;
+}
+
+.popup,
+.popup2 {
+  display: none;
+}
+
+.popup.show {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  color: #800000;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+}
+
+
+.popup2.show {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #F5F5DC;
+  background-color: #F5F5DC;
+  margin-top: 10px;
+}
+
+.hover {
+  height: 30px;
+}
+
+.hover2 {
+  height: 35px;
+}
+
+.hover:hover,
+.hover2:hover {
+  color: #F5F5DC;
+  background-color: #800000;
+}
+
+
+.box_katalog {
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+}
+
+.vse img {
+  margin-top: 1px;
+}
+
+.box_katalog_laguage {
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+}
+
+.product_box {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #800000;
+  justify-content: center;
+  align-items: end;
+  display: flex;
+}
+
+.product_box p {
+  z-index: 10;
+  position: absolute;
+}
+
+.p_product {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 1000;
+  font-style: normal;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #F5F5DC;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: #800000;
+  margin-bottom: 10px;
+
+}
+
+.ablockcatalog {
+  width: 200px;
+  height: 40px;
+  color: #800000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.ablockcatalog.show {
+  background-color: #800000;
+  color: #F5F5DC;
+
+}
+
+.scrollbar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.block2 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 30px 0px 40px 0px;
+  gap: 30px 0px;
+}
+
+
+
+
+.twoblocks {
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.allCategories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+.h1Search{
+  font-size: 40px;
+  color: #800000;
+}
+
+.pSearch{
+  font-size: 20px;
+  color: #800000;
+}
+
+.boxPSearch{
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  font-size: 70px;
+}
+
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}

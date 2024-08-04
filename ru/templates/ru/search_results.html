@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+
+{% block content %}
+
+<h1 class="h1Search">{{ search }}</h1>
+<div class="box_sec2_prod">
+    {% for product in products %}
+    <div class="product_box">
+        <p class="p_product">{{ product.price|format_price }} сум</p>
+        <img style="width: 300px; height: 300px; border: none; border-radius: 5px; z-index: 1;"
+            src="{{ product.image.url }}">
+    </div>
+    {% empty %}
+    <div class="boxPSearch">
+    <p class="pSearch">Нет товара данной категории.</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
