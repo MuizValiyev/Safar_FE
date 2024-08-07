@@ -23,11 +23,6 @@
                     value="{{ request.GET.search }}">
                 <button type="submit" class="search_btn">Искать</button>
             </form>
-            {% if users.is_authenticated %}
-            <a class="aSingIn" href="">Logout</a>
-            {% else %}
-            <a class="aSingIn" href="">Войти</a>
-            {% endif %}
             <div class="box_katalog_laguage">
                 <button id="openPopup2" class="openPopup2">
                     <img id="openPopupImage" src="{% static 'ru/img/ru.svg' %}">
