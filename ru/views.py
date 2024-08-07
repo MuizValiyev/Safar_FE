@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from allmodels.models import allProduct, Category
+from .models import allProduct, Category
 from fuzzywuzzy import fuzz
 from unidecode import unidecode
-from django.core.paginator import Paginator
 
 
 def search_results(request):

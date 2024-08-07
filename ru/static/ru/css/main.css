@@ -540,17 +540,17 @@ nav {
 }
 
 
-.h1Search{
+.h1Search {
   font-size: 40px;
   color: #800000;
 }
 
-.pSearch{
+.pSearch {
   font-size: 20px;
   color: #800000;
 }
 
-.boxPSearch{
+.boxPSearch {
   width: 1400px;
   height: 100%;
   display: flex;
@@ -577,4 +577,15 @@ nav {
   opacity: 0;
   transition: opacity 0.5s;
   pointer-events: none;
+}
+
+.aSingIn {
+  width: 100px;
+  height: 40px;
+  background-color: #F5F5DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #800000;
 }
