@@ -613,33 +613,7 @@ nav {
   border-radius: 5px;
 }
 
-.formLogin {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-#id_username, #id_password, #id_old_password, #id_new_password1, #id_new_password2 {
-  padding: 0px 10px;
-  outline: none;
-  color: #800000;
-}
-
-#id_username::placeholder, #id_password::placeholder {
-  color: #800000;
-}
-
-
-.btn{
-  background-color: #800000;
-  color: #F5F5DC;
-  padding: 10px 40px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-}
 
 .box_logout{
   color: #800000;
@@ -660,6 +634,19 @@ nav {
 
 .formPassword input{
   height: 40px;
-  color: #F5F5DC;
+  color: #800000;
   border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  width: 300px;
 }
+
+.formPassword input.btn, .btn{
+  background-color: #800000;
+  color: #F5F5DC;
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: center;}

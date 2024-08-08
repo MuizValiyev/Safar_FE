@@ -4,12 +4,13 @@
 {% block content %}
     
 <div class="login-form">
-    <form class="formLogin" action="{% url 'login' %}" method="post">
+    <form class="formPassword" action="{% url 'login' %}" method="post">
         {{ form.username }}
         {{ form.password }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}" />
         <p><input class="btn" type="submit" value="Войти"></p>
+        <a style="color: #800000; width: 120px;" href="{% url 'password_reset' %}">Забыли пароль?</a>
     </form>
 </div>
 {% endblock %}
