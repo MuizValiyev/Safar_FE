@@ -362,8 +362,8 @@ nav {
   font-style: normal;
 }
 
-.openPopup {
-  width: 170px;
+.openPopup, .openPopupAccount {
+  width: 140px;
   display: flex;
   justify-content: center;
   line-height: 20px;
@@ -387,18 +387,29 @@ nav {
   cursor: pointer;
 }
 
-.popup,
-.popup2 {
+.popup2, .popup_account {
   display: none;
 }
 
-.popup.show {
-  width: 170px;
+.popup_account.show {
+  width: 140px;
   display: flex;
   flex-direction: column;
   color: #800000;
   background-color: #F5F5DC;
   margin-top: 10px;
+}
+
+.popup_account.show a {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  color: #800000;
+}
+
+.popup_account.show a:hover {
+  background-color: #800000;
+  color: #F5F5DC;
 }
 
 
@@ -436,7 +447,7 @@ nav {
   margin-top: 1px;
 }
 
-.box_katalog_laguage {
+.box_katalog_laguage, .box_popup_account {
   display: flex;
   flex-direction: column;
   height: 35px;
@@ -615,24 +626,24 @@ nav {
 
 
 
-.box_logout{
+.box_logout {
   color: #800000;
   font-size: 20px;
 }
 
-.box_logout p{
+.box_logout p {
   height: 60px;
   width: 400px;
 }
 
-.formPassword{
+.formPassword {
   display: flex;
   flex-direction: column;
-  width:500px;
+  width: 500px;
   gap: 10px;
 }
 
-.formPassword input{
+.formPassword input {
   height: 40px;
   color: #800000;
   border-radius: 5px;
@@ -641,7 +652,8 @@ nav {
   width: 300px;
 }
 
-.formPassword input.btn, .btn{
+.formPassword input.btn,
+.btn {
   background-color: #800000;
   color: #F5F5DC;
   padding: 10px 40px;
@@ -649,4 +661,7 @@ nav {
   cursor: pointer;
   width: 200px;
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
+
+

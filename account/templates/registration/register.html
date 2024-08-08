@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Safar_FE - Регистрация{% endblock %}
+
+{% block content %}
+    <form class="formPassword" method="post">
+        {{ user_form.username }}
+        {{ user_form.first_name }}
+        {{ user_form.email }}
+        {{ user_form.password1 }}
+        {{ user_form.password2 }}
+        {% csrf_token %}
+        <input class="btn" type="submit" value="Зарегестрироватся">
+    </form>
+{% endblock content %}

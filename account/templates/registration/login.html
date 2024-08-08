@@ -10,6 +10,7 @@
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}" />
         <p><input class="btn" type="submit" value="Войти"></p>
+        <a style="color: #800000; width: 150px;" href="{% url 'register' %}">Зарегестрироватся</a>
         <a style="color: #800000; width: 120px;" href="{% url 'password_reset' %}">Забыли пароль?</a>
     </form>
 </div>

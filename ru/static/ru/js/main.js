@@ -1,8 +1,22 @@
-
-
+const openPopupAccount = document.getElementById('openPopupAccount');
+const PopupAccount = document.getElementById('popup_account');
 const openPopupButton2 = document.getElementById('openPopup2');
 const openPopupImage = document.getElementById('openPopupImage');
 const popup2 = document.getElementById('popup2');
+
+
+openPopupAccount.addEventListener('click', (event) => {
+    const rect = openPopupAccount.getBoundingClientRect();
+    PopupAccount.classList.toggle('show');
+});
+
+document.addEventListener('click', (event) => {
+    if (!PopupAccount.contains(event.target) && event.target !== openPopupAccount) {
+        PopupAccount.classList.remove('show');
+    }
+});
+
+
 
 openPopupButton2.addEventListener('click', (event) => {
     const rect = openPopupButton2.getBoundingClientRect();
@@ -14,20 +28,9 @@ openPopupImage.addEventListener('click', (event) => {
     popup2.classList.toggle('show');
 });
 
-
 document.addEventListener('click', (event) => {
     if (!popup2.contains(event.target) && event.target !== openPopupButton2) {
         popup2.classList.remove('show');
     }
 });
 
-
-window.addEventListener('load', function () {
-    const loader = document.querySelector('.loader');
-    setTimeout(function() {
-        loader.classList.add('hidden');
-        setTimeout(function() {
-            loader.style.display = 'none';
-        }, 500); // Время исчезновения
-    }, 1000); // Задержка перед исчезновением
-});
