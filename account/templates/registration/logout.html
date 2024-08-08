@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Safar_FE - Выход из аккаунта{% endblock title %}
+
+
+{% block content %}
+<div class="box_logout">
+    <p>
+        Вы успешно вышли с аккаунта. 
+    </p>
+    <a class="btn" href="{% url "login" %}">Войти сново</a>
+</div>
+{% endblock content %}

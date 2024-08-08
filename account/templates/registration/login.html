@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Safar_FE - Вход в аккаунт{% endblock title %}
+{% block content %}
+    
+<div class="login-form">
+    <form class="formLogin" action="{% url 'login' %}" method="post">
+        {{ form.username }}
+        {{ form.password }}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        <p><input class="btn" type="submit" value="Войти"></p>
+    </form>
+</div>
+{% endblock %}
