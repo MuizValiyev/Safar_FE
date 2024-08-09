@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load custom_filters %}
-<title>{% block title %}Safar_FE - Главное{% endblock title %}</title>
+<title>{% block title %}SafarFE - Главное{% endblock title %}</title>
 {% block content %}
-<div class="loader">Safar_FE</div>
+<div class="loader">SafarFE</div>
 <section class="sec2">
     <div class="box_sec2">
         <div class="prod">
@@ -23,7 +23,12 @@
             <p class="p_product">{{ allItem.price|format_price }} сум</p>
             <img style="width: 300px; height: 300px; border: none; border-radius: 5px; z-index: 1;"
                 src="{{ allItem.image.url }}">
-        </div>
+            </div>
+            <form action="{% url "cart:add" product.id %}" method="post">
+                {{ cart_product_form }}
+                {% csrf_token %}
+                <input type="submit" value="Add to cart">
+                </form>
         {% endfor %}
     </div>
 </section>

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import allProduct, Category
 from fuzzywuzzy import fuzz
 from unidecode import unidecode
-
+from cart.forms import CartAddProductForm
 
 def search_results(request):
     search = request.GET.get('search', '')
@@ -26,8 +26,13 @@ def search_results(request):
 
 
 def home(request):
+    cart_product_form = CartAddProductForm()
     allItems = allProduct.objects.all().order_by('-date')[:12]
-    return render(request, 'ru/index.html', {'allItems':allItems})
+    context = {
+        'allItems':allItems, 
+        'cart_product_form':cart_product_form,
+        }
+    return render(request, 'ru/index.html', context)
 
 
 def catalog(request):

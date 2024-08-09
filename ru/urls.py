@@ -1,6 +1,9 @@
 from django.urls import path
 from .views import home, catalog, shopper, bag, organizer, backpack, umra, cosmeticBag, giftBag, envelopesForBooks, search_results
 
+
+
+
 urlpatterns = [
     path('', home, name='home'),
     path('products/', catalog, name='catalog'),

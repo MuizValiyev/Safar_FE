@@ -14,7 +14,7 @@
     <div class="block_nav">
         {% block nav %}
         <nav>
-            <a href="{% url 'home' %}" class="Logo">Safar_FE</a>
+            <a href="{% url 'home' %}" class="Logo">SafarFE</a>
             <div class="box_katalog">
                 <a class="openPopup" href="{% url 'catalog' %}">Каталог</a>
             </div>
@@ -29,7 +29,7 @@
                     {{ user }}
                 </button>
                 <div id="popup_account" class="popup_account">
-                    <a href="">Корзина</a>
+                    <a href="{% url 'cart:cart_detail' %}">Корзина</a>
                     <a href="{% url 'password_change' %}">Сменить Пароль</a>
                     <a href="{% url 'logout' %}">Выйти с аккаунта</a>
                 </div>
@@ -84,7 +84,7 @@
         {% endblock %}
     </div>
 
-    <script src="{% static 'ru/js/main.js' %}"></script>
+    <script src="{% static 'ru/js/popups.js' %}"></script>
     <script src="{% static 'ru/js/fixed-block.js' %}"></script>
     <script src="{% static 'ru/js/loader.js' %}"></script>
     <script src="{% static 'ru/js/placeholders.js' %}"></script>
